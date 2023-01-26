@@ -67,4 +67,26 @@ let ninja1: object
 ninja1 = {name: "Kay", age: 30}
 
 let ninja2: object
-ninja2 = {name: string, age: number}  
+ninja2 = {name: string, age: number}
+
+# Any types (Reduce advantages of using TS)
+
+let age: any = 25 (age is a variable with any time, then instatiate with number)
+age = true (variable can now be changed)
+
+# Managing folders
+
+Public folder for .js /css etc
+
+Src folder for .ts
+
+tsc --init
+
+change rootDir to './src'
+change outDir to "./public"
+
+tsc -w
+
+Add this to config file to prevent root files being compiled:
+
+"include": ["src"],
