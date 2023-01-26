@@ -1,5 +1,5 @@
-// To convert TS to JS
-// Terminal: tsc sandbox.ts sandbox.js or where files share same name: tsc sandbox.ts
-
+// Browsers do not understand TS so .ts files have to be compiled into JS.
 var character = "Kay";
+var age = 37;
+var isBlackbELT = false;
 console.log(character);
