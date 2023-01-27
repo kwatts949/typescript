@@ -47,9 +47,9 @@ let age: number
 let ninjas: string[] (array ninjas is of type string)
 
 This array is not initialised yet, to do so:
-
+```
 let ninjas: string[] = []
-
+```
 or ninjas = []
 
 then you can push into it.
@@ -57,18 +57,22 @@ then you can push into it.
 # Union types:
 
 normal variables dont need brackets e.g.
+```
 let id: string|number
 
-let mixed: (string | number | boolean)[] = [] (mixed can contain string/number/boolean)
+
+let mixed: (string | number | boolean)[] = [] 
+```
+(mixed can contain string/number/boolean)
 
 ## Objects
-
+```
 let ninja1: object
 ninja1 = {name: "Kay", age: 30}
 
 let ninja2: object
 ninja2 = {name: string, age: number}
-
+```
 # Any types (Reduce advantages of using TS)
 
 let age: any = 25 (age is a variable with any time, then instatiate with number)
@@ -79,14 +83,41 @@ age = true (variable can now be changed)
 Public folder for .js /css etc
 
 Src folder for .ts
-
+```
 tsc --init
+```
 
 change rootDir to './src'
 change outDir to "./public"
-
+```
 tsc -w
+```
 
 Add this to config file to prevent root files being compiled:
+```
+"include": ["src"]
+```
 
-"include": ["src"],
+## Functions
+```
+let greet: Function (greet is of type Function)
+
+const add = (a: number, b: number) =>{ (a/b are parameters which are numbers)
+return a + b
+}
+```
+
+Union types can also be used e.g.
+```
+a: number | string
+```
+
+Params can be optional e.g.
+```
+c?: number
+```
+
+And have default values
+```
+c: number = 10
+```
