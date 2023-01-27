@@ -207,3 +207,57 @@ type ObjWithName = {name: string, id: StringOrNum}
 const greet = (user: objWithName => {
   console.log(`${user.name} says hello!`)
 }) 
+```
+
+# Type signatures
+greet is defined as a function accepting two params which are strings
+
+The function greet (below) follows the expected pattern so raises no errors.
+
+Void = no data
+
+```
+let greet: (a: string, b: string) => void;
+
+greet = (name: string, greeting: string) => {
+  console.log(`${name} says ${greeting}`);
+};
+```
+# The DOM
+
+Mostly identical to JS.
+
+Trying to access properties such as anchor tag below, will raise an error as TS cant access the html file. It warns us that the property may not exist.
+
+``` 
+const anchor = document.querySelector("a");
+
+console.log(anchor.href)
+```
+
+Fix using:
+```
+if (anchor) {
+  console.log(anchor.href);
+}
+```
+
+or if you are certain it exists
+
+```
+const anchor = document.querySelector("a")!;
+```
+# Typecasting
+
+Selection via class 
+```
+const form = document.querySelector(".new-item-form") as HTMLFormElement;
+```
+Using id to grab element
+```
+const type = document.querySelector("#type") as HTMLSelectElement
+
+
+
+
+
