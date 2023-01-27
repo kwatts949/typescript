@@ -36,12 +36,12 @@ names.push("Peter");
 console.log(names);
 
 ```
+
 Array types cannot be changed.
 ```
 
 Mixed arrays are possible but must be declared when the array is instantiated.:
 
-```
 let mixed = ["Kay", 3, "Toby", 6]
 ```
 
