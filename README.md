@@ -4,9 +4,9 @@
 <div>
 <h6 align='center'>
 <a href='https://github.com/kwatts949/typescript/blob/master/README.md#setup'>Setup </a> <span> · </span>
-<a href='https://github.com/kwatts949/typescript/blob/master/README.md#arrays'>Arrays </a> <span> · </span>
-<a href='https://github.com/kwatts949/typescript/blob/master/README.md#objects'>Objects </a> <span> · </span>
-<a href='https://github.com/kwatts949/typescript/blob/master/README.md#explicit-types'>Explicit Types </a> <span> · </span>
+<a href='https://github.com/kwatts949/typescript/blob/main/README.md#arrays'>Arrays </a> <span> · </span>
+<a href='https://github.com/kwatts949/typescript/blob/main/README.md#objects'>Objects </a> <span> · </span>
+<a href='https://github.com/kwatts949/typescript/blob/main/README.md#explicit-types'>Explicit Types </a> <span> · </span>
 
 
 <h6>
