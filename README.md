@@ -1,5 +1,19 @@
 # typescript notes
 
+
+<div>
+<h6 align='center'>
+<a href='https://github.com/kwatts949/typescript/blob/master/README.md#setup'>Setup </a> <span> · </span>
+<a href='https://github.com/kwatts949/typescript/blob/master/README.md#arrays'>Arrays </a> <span> · </span>
+<a href='https://github.com/kwatts949/typescript/blob/master/README.md#objects'>Objects </a> <span> · </span>
+<a href='https://github.com/kwatts949/typescript/blob/master/README.md#explicit-types'>Explicit Types </a> <span> · </span>
+
+
+<h6>
+</div>
+
+## Setup
+
 To convert TS to JS :
 
 ```
@@ -57,13 +71,16 @@ age: 37 (always a number)
 Additional variables cannot be added, leading to cleaner code.
 
 # Explicit types:
-
-let character: string (var character is of type string)
+(var character is of type string)
+```
+let character: string 
 let age: number
-
+```
 ## Arrays:
-
-let ninjas: string[] (array ninjas is of type string)
+```
+let ninjas: string[] 
+```
+(array ninjas is of type string)
 
 This array is not initialised yet, to do so:
 
@@ -71,7 +88,10 @@ This array is not initialised yet, to do so:
 let ninjas: string[] = []
 ```
 
-or ninjas = []
+or 
+```
+ninjas = []
+```
 
 then you can push into it.
 
@@ -99,8 +119,10 @@ ninja2 = {name: string, age: number}
 ```
 
 # Any types (Reduce advantages of using TS)
-
-let age: any = 25 (age is a variable with any time, then instatiate with number)
+(age is a variable with any time, then instatiate with number)
+```
+let age: any = 25 
+```
 age = true (variable can now be changed)
 
 # Managing folders
