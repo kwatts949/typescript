@@ -4,10 +4,16 @@
 <div>
 <h6 align='center'>
 <a href='https://github.com/kwatts949/typescript/blob/master/README.md#setup'>Setup </a> <span> · </span>
+<a href='https://github.com/kwatts949/typescript/blob/main/README.md#managing-folders'> Managing Folders</a>
+<span> · </span>
 <a href='https://github.com/kwatts949/typescript/blob/main/README.md#arrays'>Arrays </a> <span> · </span>
 <a href='https://github.com/kwatts949/typescript/blob/main/README.md#objects'>Objects </a> <span> · </span>
 <a href='https://github.com/kwatts949/typescript/blob/main/README.md#explicit-types'>Explicit Types </a> <span> · </span>
-
+<a href='https://github.com/kwatts949/typescript/blob/main/README.md#union-types'>Union Types</a> <span> · </span>
+<a href='https://github.com/kwatts949/typescript/blob/main/README.md#any-types-reduce-advantages-of-using-ts'> Any Types</a>
+<span> · </span>
+<a href='https://github.com/kwatts949/typescript/blob/main/README.md#functions'>Functions</a> <span> · </span>
+<a href='https://github.com/kwatts949/typescript/blob/main/README.md#type-aliases'> Type Aliases</a>
 
 <h6>
 </div>
@@ -59,7 +65,7 @@ Mixed arrays are possible but must be declared when the array is instantiated.:
 let mixed = ["Kay", 3, "Toby", 6]
 ```
 
-## Objects:
+# Objects:
 
 Object variables cannot be changed.
 
@@ -148,7 +154,7 @@ Add this to config file to prevent root files being compiled:
 "include": ["src"]
 ```
 
-## Functions
+# Functions
 
 ```
 let greet: Function (greet is of type Function)
@@ -176,7 +182,7 @@ And have default values
 c: number = 10
 ```
 
-## Type aliases
+# Type aliases
 
 Code can get repetitive :
 ```
