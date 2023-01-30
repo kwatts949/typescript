@@ -256,6 +256,43 @@ const form = document.querySelector(".new-item-form") as HTMLFormElement;
 Using id to grab element
 ```
 const type = document.querySelector("#type") as HTMLSelectElement
+```
+
+# Classes
+
+Similar to JS
+
+```
+class Invoice {
+  client: string;
+  details: string;
+  amount: number
+
+  constructor(c: string, d: string, a: number) {
+    this.client = c,
+    this.details = d,
+    this.amount = a
+  }
+
+  format() {
+    return `${this.client} owes £${this.amount} for ${this.details}`
+  }
+}
+```
+To instantiate an instance:
+```
+const invoiceOne = new Invoice("Kay", "Typing", 40)
+```
+
+Create an array that takes only invoices:
+```
+let invoices: Invoice[] = []
+```
+
+Class instance properties can be accessed via:
+```
+invoiceOne.client = 100
+```
 
 
 
