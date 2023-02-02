@@ -360,3 +360,47 @@ class Invoice {
   }
 }
 ```
+## Modules
+tsconfig.json, change
+
+```
+"module": "commonjs"
+```
+to
+```
+"module": "ES2015",
+"target": "ES6"
+```
+then index.html
+```
+<script src='app.js'></script>
+```
+to
+```
+<script type="'module" src='app.js'></script>
+```
+Create a new folder in src file, create a new file inside it.
+```
+// classes
+export class Invoice {
+  // readonly client: string;
+  // private details: string;
+  // public amount: number;
+
+  constructor(
+    readonly client: string,
+    private details: string,
+    public amount: number
+  ) {}
+
+  format() {
+    return `${this.client} owes £${this.amount} for ${this.details}`;
+  }
+}
+```
+in app.ts n.b when importing always use .js file
+```
+import { Invoice } from "./classes/Invoice.js";
+```
+There are downsides as only works for modern browsers and makes multiple requests to load screen. Webpack can be used to bundle.
+
