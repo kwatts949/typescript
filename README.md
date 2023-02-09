@@ -404,3 +404,24 @@ import { Invoice } from "./classes/Invoice.js";
 ```
 There are downsides as only works for modern browsers and makes multiple requests to load screen. Webpack can be used to bundle.
 
+## Interfaces
+```
+interface IsPerson {
+  name: string;
+  age: number;
+
+  speak(a: string): void;
+  spend(a: number): number;
+}
+
+const me: IsPerson = {
+  name: "Tom",
+  age: 30,
+  speak(text: string): void {
+    console.log(text);
+  },
+  spend(amount: number): number {
+    console.log('I spent', amount)
+    return amount
+  }
+};
